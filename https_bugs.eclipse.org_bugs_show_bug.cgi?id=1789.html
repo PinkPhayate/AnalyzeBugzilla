@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789</title><link rel="stylesheet" type="text/css" href="https_bugs.eclipse.org_bugs_show_bug.cgi%3Fid=1789_files/viewsource.css"></head><body contextmenu="actions" id="viewsource" class="highlight" style="-moz-tab-size: 4"><pre id="line1"><span></span><span title="Almost standards mode doctype. Expected “&lt;!DOCTYPE html&gt;”." class="error doctype">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+<span id="line2"></span>                      "http://www.w3.org/TR/html4/loose.dtd"&gt;</span><span>
+<span id="line3"></span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>="<a class="attribute-value">en</a>"&gt;</span><span>
+<span id="line4"></span>  </span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line5"></span>    </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>Bug 1789 <span class="entity"><span>&amp;</span>ndash;</span> DCR: New Script Wizard (1GF681B)</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+<span id="line6"></span>
+<span id="line7"></span>      </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">http-equiv</span>="<a class="attribute-value">Content-Type</a>" <span class="attribute-name">content</span>="<a class="attribute-value">text/html; charset=UTF-8</a>"&gt;</span><span>
+<span id="line8"></span>
+<span id="line9"></span>
+<span id="line10"></span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">Top</a>" <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/" class="attribute-value">https://bugs.eclipse.org/bugs/</a>"&gt;</span><span>
+<span id="line11"></span>
+<span id="line12"></span>  
+<span id="line13"></span>
+<span id="line14"></span>
+<span id="line15"></span>  
+<span id="line16"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">Show</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Dependency Tree</a>"
+<span id="line17"></span>          <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=1789&amp;hide_resolved=1" class="attribute-value">showdependencytree.cgi?id=1789<span class="entity"><span>&amp;</span>amp;</span>hide_resolved=1</a>"&gt;</span><span>
+<span id="line18"></span>
+<span id="line19"></span>      </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">Show</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Bug Activity</a>"
+<span id="line20"></span>            <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_activity.cgi?id=1789" class="attribute-value">show_activity.cgi?id=1789</a>"&gt;</span><span>
+<span id="line21"></span>      </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">Show</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Printer-Friendly Version</a>"
+<span id="line22"></span>            <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?format=multiple&amp;id=1789" class="attribute-value">show_bug.cgi?format=multiple<span class="entity"><span>&amp;</span>amp;</span>id=1789</a>"&gt;</span><span>
+<span id="line23"></span>
+<span id="line24"></span>
+<span id="line25"></span>
+<span id="line26"></span>    
+<span id="line27"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/skins/standard/global.css?1369324972" class="attribute-value">skins/standard/global.css?1369324972</a>"
+<span id="line28"></span>          <span class="attribute-name">rel</span>="<a class="attribute-value">alternate stylesheet</a>" 
+<span id="line29"></span>          <span class="attribute-name">title</span>="<a class="attribute-value">Classic</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/assets/skins/sam/autocomplete.css?1369324972" class="attribute-value">js/yui/assets/skins/sam/autocomplete.css?1369324972</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>"
+<span id="line30"></span>        <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" &gt;</span><span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/assets/skins/sam/calendar.css?1369324972" class="attribute-value">js/yui/assets/skins/sam/calendar.css?1369324972</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>"
+<span id="line31"></span>        <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" &gt;</span><span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/skins/standard/global.css?1369324972" class="attribute-value">skins/standard/global.css?1369324972</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>"
+<span id="line32"></span>        <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" &gt;</span><span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/skins/standard/show_bug.css?1389975128" class="attribute-value">skins/standard/show_bug.css?1389975128</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>"
+<span id="line33"></span>        <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" &gt;</span><span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/extensions/Voting/web/style.css?1369324972" class="attribute-value">extensions/Voting/web/style.css?1369324972</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>"
+<span id="line34"></span>        <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" &gt;</span><span></span><span class="comment">&lt;!--[if lte IE 7]&gt;
+<span id="line35"></span>      
+<span id="line36"></span>
+<span id="line37"></span>
+<span id="line38"></span>  &lt;link href="skins/standard/IE-fixes.css?1369324972" rel="stylesheet"
+<span id="line39"></span>        type="text/css" &gt;
+<span id="line40"></span>&lt;![endif]--&gt;</span><span>
+<span id="line41"></span>
+<span id="line42"></span>    
+<span id="line43"></span>
+<span id="line44"></span>    
+<span id="line45"></span>
+<span id="line46"></span>    
+<span id="line47"></span>
+<span id="line48"></span>    
+<span id="line49"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/yahoo-dom-event/yahoo-dom-event.js?1369324972" class="attribute-value">js/yui/yahoo-dom-event/yahoo-dom-event.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/cookie/cookie-min.js?1369324972" class="attribute-value">js/yui/cookie/cookie-min.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/datasource/datasource-min.js?1369324972" class="attribute-value">js/yui/datasource/datasource-min.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/connection/connection-min.js?1369324972" class="attribute-value">js/yui/connection/connection-min.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/json/json-min.js?1369324972" class="attribute-value">js/yui/json/json-min.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/autocomplete/autocomplete-min.js?1369324972" class="attribute-value">js/yui/autocomplete/autocomplete-min.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/yui/calendar/calendar-min.js?1369324972" class="attribute-value">js/yui/calendar/calendar-min.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/global.js?1369324972" class="attribute-value">js/global.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line50"></span>
+<span id="line51"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line52"></span>    </span><span>&lt;!</span><span>--
+<span id="line53"></span>        YAHOO.namespace('bugzilla');
+<span id="line54"></span>        YAHOO.util.Event.addListener = function (el, sType, fn, obj, overrideContext) {
+<span id="line55"></span>               if ( ("onpagehide" in window || YAHOO.env.ua.gecko) &amp;&amp; sType === "unload") { sType = "pagehide"; };
+<span id="line56"></span>               var capture = ((sType == "focusin" || sType == "focusout") &amp;&amp; !YAHOO.env.ua.ie) ? true : false;
+<span id="line57"></span>               return this._addListener(el, this._getType(sType), fn, obj, overrideContext, capture);
+<span id="line58"></span>         };
+<span id="line59"></span>        if ( "onpagehide" in window || YAHOO.env.ua.gecko) {
+<span id="line60"></span>            YAHOO.util.Event._simpleRemove(window, "unload", 
+<span id="line61"></span>                                           YAHOO.util.Event._unload);
+<span id="line62"></span>        }
+<span id="line63"></span>        
+<span id="line64"></span>        function unhide_language_selector() { 
+<span id="line65"></span>            YAHOO.util.Dom.removeClass(
+<span id="line66"></span>                'lang_links_container', 'bz_default_hidden'
+<span id="line67"></span>            ); 
+<span id="line68"></span>        } 
+<span id="line69"></span>        YAHOO.util.Event.onDOMReady(unhide_language_selector);
+<span id="line70"></span>
+<span id="line71"></span>        
+<span id="line72"></span>        var BUGZILLA = {
+<span id="line73"></span>            param: {
+<span id="line74"></span>                cookiepath: '\/bugs',
+<span id="line75"></span>                maxusermatches: 10
+<span id="line76"></span>            },
+<span id="line77"></span>            constant: {
+<span id="line78"></span>                COMMENT_COLS: 80
+<span id="line79"></span>            },
+<span id="line80"></span>            string: {
+<span id="line81"></span>                
+<span id="line82"></span>
+<span id="line83"></span>                attach_desc_required:
+<span id="line84"></span>                    'You must enter a Description for this attachment.',
+<span id="line85"></span>                component_required:
+<span id="line86"></span>                    'You must select a Component for this bug.',
+<span id="line87"></span>                description_required:
+<span id="line88"></span>                    'You must enter a Description for this bug.',
+<span id="line89"></span>                short_desc_required:
+<span id="line90"></span>                    'You must enter a Summary for this bug.',
+<span id="line91"></span>                version_required:
+<span id="line92"></span>                    'You must select a Version for this bug.'
+<span id="line93"></span>            }
+<span id="line94"></span>        };
+<span id="line95"></span>
+<span id="line96"></span>    if (history &amp;&amp; history.replaceState) {
+<span id="line97"></span>      if(!document.location.href.match(/show_bug\.cgi/)) {
+<span id="line98"></span>        history.replaceState( null, 
+<span id="line99"></span>                             "Bug 1789 – DCR: New Script Wizard (1GF681B)",  
+<span id="line100"></span>                             "show_bug.cgi?id=1789" );
+<span id="line101"></span>        document.title = "Bug 1789 – DCR: New Script Wizard (1GF681B)";
+<span id="line102"></span>      }
+<span id="line103"></span>      if (document.location.href.match(/show_bug\.cgi\?.*list_id=/)) {
+<span id="line104"></span>        var href = document.location.href;
+<span id="line105"></span>        href = href.replace(/[\?&amp;]+list_id=(\d+|cookie)/, '');
+<span id="line106"></span>        history.replaceState(null, "Bug 1789 – DCR: New Script Wizard (1GF681B)", href);
+<span id="line107"></span>      }
+<span id="line108"></span>    }
+<span id="line109"></span>    YAHOO.util.Event.onDOMReady(function() {
+<span id="line110"></span>      initDirtyFieldTracking();
+<span id="line111"></span>    });
+<span id="line112"></span>    // --&gt;
+<span id="line113"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line114"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/util.js?1369324972" class="attribute-value">js/util.js?1369324972</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/field.js?1421942455" class="attribute-value">js/field.js?1421942455</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line115"></span>
+<span id="line116"></span>    
+<span id="line117"></span>
+<span id="line118"></span>    
+<span id="line119"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">search</a>" <span class="attribute-name">type</span>="<a class="attribute-value">application/opensearchdescription+xml</a>"
+<span id="line120"></span>                       <span class="attribute-name">title</span>="<a class="attribute-value">Bugzilla</a>" <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/search_plugin.cgi" class="attribute-value">./search_plugin.cgi</a>"&gt;</span><span>
+<span id="line121"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">shortcut icon</a>" <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/images/favicon.ico" class="attribute-value">images/favicon.ico</a>" &gt;</span><span>
+<span id="line122"></span>  </span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line123"></span>
+<span id="line124"></span>
+<span id="line125"></span>
+<span id="line126"></span>  </span><span>&lt;<span class="start-tag">body</span> <span class="attribute-name">onload</span>="<a class="attribute-value"></a>"
+<span id="line127"></span>        <span class="attribute-name">class</span>="<a class="attribute-value">bugs-eclipse-org-bugs bz_bug bz_status_RESOLVED bz_product_Platform bz_component_Scripting bz_bug_1789 yui-skin-sam</a>"&gt;</span><span>
+<span id="line128"></span>
+<span id="line129"></span>
+<span id="line130"></span>
+<span id="line131"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">header</a>"&gt;</span><span>
+<span id="line132"></span></span><span class="comment">&lt;!-- 1.0@bugzilla.org --&gt;</span><span>
+<span id="line133"></span>
+<span id="line134"></span>
+<span id="line135"></span>
+<span id="line136"></span>
+<span id="line137"></span>
+<span id="line138"></span></span><span class="comment">&lt;!--  START OF SOLSTICE HEADER --&gt;</span><span>
+<span id="line139"></span> </span><span>&lt;<span class="start-tag">style</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>"&gt;</span><span>
+<span id="line140"></span>    @import url('https://www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/barebone.min.css')
+<span id="line141"></span>    </span><span>&lt;/<span class="end-tag">style</span>&gt;</span><span>
+<span id="line142"></span>    </span><span>&lt;<span class="start-tag">script</span>
+<span id="line143"></span>      <span class="attribute-name">src</span>="<a href="view-source:https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/barebone.min.js" class="attribute-value">https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/barebone.min.js</a>"&gt;</span><span>
+<span id="line144"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span><span>&lt;<span class="start-tag">header</span> <span class="attribute-name">role</span>="<a class="attribute-value">banner</a>" <span class="attribute-name">class</span>="<a class="attribute-value">barebone-layout thin-header padding-top-5 padding-bottom-5</a>"  <span class="attribute-name">id</span>="<a class="attribute-value">header-wrapper</a>"&gt;</span><span>
+<span id="line145"></span>  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">container-fluid reset</a>"&gt;</span><span>
+<span id="line146"></span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">row-fluid</a>" <span class="attribute-name">id</span>="<a class="attribute-value">header-row</a>"&gt;</span><span>
+<span id="line147"></span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">col-sm-8 col-md-6 col-lg-4</a>" <span class="attribute-name">id</span>="<a class="attribute-value">header-left</a>"&gt;</span><span>
+<span id="line148"></span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">wrapper-logo-default</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/" class="attribute-value">https://www.eclipse.org/</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">logo-eclipse-default img-responsive hidden-xs</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">logo</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-426x100.png" class="attribute-value">/eclipse.org-common/themes/solstice/public/images/logo/eclipse-426x100.png</a>"<span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line149"></span>      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">col-sm-16 col-md-18 col-lg-20</a>" <span class="attribute-name">id</span>="<a class="attribute-value">main-menu-wrapper</a>"&gt;</span><span>
+<span id="line150"></span>  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">navbar yamm</a>" <span class="attribute-name">id</span>="<a class="attribute-value">main-menu</a>"&gt;</span><span>
+<span id="line151"></span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">navbar-collapse-1</a>" <span class="attribute-name">class</span>="<a class="attribute-value">navbar-collapse collapse</a>"&gt;</span><span>
+<span id="line152"></span>      </span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">nav navbar-nav navbar-right</a>"&gt;</span><span>
+<span id="line153"></span>        </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>="<a class="attribute-value">visible-thin</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/downloads/" class="attribute-value">https://www.eclipse.org/downloads/</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_self</a>"&gt;</span><span>Download</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/users/" class="attribute-value">https://www.eclipse.org/users/</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_self</a>"&gt;</span><span>Getting Started</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/membership/" class="attribute-value">https://www.eclipse.org/membership/</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_self</a>"&gt;</span><span>Members</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/projects/" class="attribute-value">https://www.eclipse.org/projects/</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_self</a>"&gt;</span><span>Projects</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>                  </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown visible-xs</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>" <span class="attribute-name">data-toggle</span>="<a class="attribute-value">dropdown</a>" <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-toggle</a>"&gt;</span><span>Community </span><span>&lt;<span class="start-tag">b</span> <span class="attribute-name">class</span>="<a class="attribute-value">caret</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">b</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-menu</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://marketplace.eclipse.org/" class="attribute-value">http://marketplace.eclipse.org</a>"&gt;</span><span>Marketplace</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://events.eclipse.org/" class="attribute-value">http://events.eclipse.org</a>"&gt;</span><span>Events</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.planeteclipse.org/" class="attribute-value">http://www.planeteclipse.org/</a>"&gt;</span><span>Planet Eclipse</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/community/eclipse_newsletter/" class="attribute-value">https://www.eclipse.org/community/eclipse_newsletter/</a>"&gt;</span><span>Newsletter</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.youtube.com/user/EclipseFdn" class="attribute-value">https://www.youtube.com/user/EclipseFdn</a>"&gt;</span><span>Videos</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown visible-xs</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>" <span class="attribute-name">data-toggle</span>="<a class="attribute-value">dropdown</a>" <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-toggle</a>"&gt;</span><span>Participate </span><span>&lt;<span class="start-tag">b</span> <span class="attribute-name">class</span>="<a class="attribute-value">caret</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">b</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-menu</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/" class="attribute-value">https://bugs.eclipse.org/bugs/</a>"&gt;</span><span>Report a Bug</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/forums/" class="attribute-value">https://www.eclipse.org/forums/</a>"&gt;</span><span>Forums</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/mail/" class="attribute-value">https://www.eclipse.org/mail/</a>"&gt;</span><span>Mailing Lists</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://wiki.eclipse.org/" class="attribute-value">https://wiki.eclipse.org/</a>"&gt;</span><span>Wiki</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://wiki.eclipse.org/IRC" class="attribute-value">https://wiki.eclipse.org/IRC</a>"&gt;</span><span>IRC</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/contribute/" class="attribute-value">https://www.eclipse.org/contribute/</a>"&gt;</span><span>How to Contribute</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown visible-xs</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>" <span class="attribute-name">data-toggle</span>="<a class="attribute-value">dropdown</a>" <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-toggle</a>"&gt;</span><span>Working Groups </span><span>&lt;<span class="start-tag">b</span> <span class="attribute-name">class</span>="<a class="attribute-value">caret</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">b</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-menu</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://wiki.eclipse.org/Auto_IWG" class="attribute-value">http://wiki.eclipse.org/Auto_IWG</a>"&gt;</span><span>Automotive</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://iot.eclipse.org/" class="attribute-value">http://iot.eclipse.org</a>"&gt;</span><span>Internet of Things</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://locationtech.org/" class="attribute-value">http://locationtech.org</a>"&gt;</span><span>LocationTech</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://lts.eclipse.org/" class="attribute-value">http://lts.eclipse.org</a>"&gt;</span><span>Long-Term Support</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://polarsys.org/" class="attribute-value">http://polarsys.org</a>"&gt;</span><span>PolarSys</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://science.eclipse.org/" class="attribute-value">http://science.eclipse.org</a>"&gt;</span><span>Science</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.openmdm.org/" class="attribute-value">http://www.openmdm.org</a>"&gt;</span><span>OpenMDM</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>          </span><span class="comment">&lt;!-- More --&gt;</span><span>
+<span id="line154"></span>          </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown eclipse-more hidden-xs</a>"&gt;</span><span>
+<span id="line155"></span>            </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">data-toggle</span>="<a class="attribute-value">dropdown</a>" <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-toggle</a>"&gt;</span><span>More</span><span>&lt;<span class="start-tag">b</span> <span class="attribute-name">class</span>="<a class="attribute-value">caret</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">b</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line156"></span>            </span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">dropdown-menu</a>"&gt;</span><span>
+<span id="line157"></span>              </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span>
+<span id="line158"></span>                </span><span class="comment">&lt;!-- Content container to add padding --&gt;</span><span>
+<span id="line159"></span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">yamm-content</a>"&gt;</span><span>
+<span id="line160"></span>                  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">row</a>"&gt;</span><span>
+<span id="line161"></span>                    </span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">col-sm-8 list-unstyled</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">p</span>&gt;</span><span></span><span>&lt;<span class="start-tag">strong</span>&gt;</span><span>Community</span><span>&lt;/<span class="end-tag">strong</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://marketplace.eclipse.org/" class="attribute-value">http://marketplace.eclipse.org</a>"&gt;</span><span>Marketplace</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://events.eclipse.org/" class="attribute-value">http://events.eclipse.org</a>"&gt;</span><span>Events</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.planeteclipse.org/" class="attribute-value">http://www.planeteclipse.org/</a>"&gt;</span><span>Planet Eclipse</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/community/eclipse_newsletter/" class="attribute-value">https://www.eclipse.org/community/eclipse_newsletter/</a>"&gt;</span><span>Newsletter</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.youtube.com/user/EclipseFdn" class="attribute-value">https://www.youtube.com/user/EclipseFdn</a>"&gt;</span><span>Videos</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">col-sm-8 list-unstyled</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">p</span>&gt;</span><span></span><span>&lt;<span class="start-tag">strong</span>&gt;</span><span>Participate</span><span>&lt;/<span class="end-tag">strong</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/" class="attribute-value">https://bugs.eclipse.org/bugs/</a>"&gt;</span><span>Report a Bug</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/forums/" class="attribute-value">https://www.eclipse.org/forums/</a>"&gt;</span><span>Forums</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/mail/" class="attribute-value">https://www.eclipse.org/mail/</a>"&gt;</span><span>Mailing Lists</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://wiki.eclipse.org/" class="attribute-value">https://wiki.eclipse.org/</a>"&gt;</span><span>Wiki</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://wiki.eclipse.org/IRC" class="attribute-value">https://wiki.eclipse.org/IRC</a>"&gt;</span><span>IRC</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/contribute/" class="attribute-value">https://www.eclipse.org/contribute/</a>"&gt;</span><span>How to Contribute</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">col-sm-8 list-unstyled</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">p</span>&gt;</span><span></span><span>&lt;<span class="start-tag">strong</span>&gt;</span><span>Working Groups</span><span>&lt;/<span class="end-tag">strong</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://wiki.eclipse.org/Auto_IWG" class="attribute-value">http://wiki.eclipse.org/Auto_IWG</a>"&gt;</span><span>Automotive</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://iot.eclipse.org/" class="attribute-value">http://iot.eclipse.org</a>"&gt;</span><span>Internet of Things</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://locationtech.org/" class="attribute-value">http://locationtech.org</a>"&gt;</span><span>LocationTech</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://lts.eclipse.org/" class="attribute-value">http://lts.eclipse.org</a>"&gt;</span><span>Long-Term Support</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://polarsys.org/" class="attribute-value">http://polarsys.org</a>"&gt;</span><span>PolarSys</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://science.eclipse.org/" class="attribute-value">http://science.eclipse.org</a>"&gt;</span><span>Science</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.openmdm.org/" class="attribute-value">http://www.openmdm.org</a>"&gt;</span><span>OpenMDM</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>                  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line162"></span>                </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line163"></span>              </span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line164"></span>            </span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>
+<span id="line165"></span>          </span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line166"></span>              </span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>
+<span id="line167"></span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line168"></span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">navbar-header</a>"&gt;</span><span>
+<span id="line169"></span>      </span><span>&lt;<span class="start-tag">button</span> <span class="attribute-name">type</span>="<a class="attribute-value">button</a>" <span class="attribute-name">class</span>="<a class="attribute-value">navbar-toggle</a>" <span class="attribute-name">data-toggle</span>="<a class="attribute-value">collapse</a>" <span class="attribute-name">data-target</span>="<a class="attribute-value">#navbar-collapse-1</a>"&gt;</span><span>
+<span id="line170"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">sr-only</a>"&gt;</span><span>Toggle navigation</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line171"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-bar</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line172"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-bar</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line173"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-bar</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line174"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-bar</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line175"></span>      </span><span>&lt;/<span class="end-tag">button</span>&gt;</span><span>
+<span id="line176"></span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">wrapper-logo-mobile</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">class</span>="<a class="attribute-value">navbar-brand visible-xs</a>" <span class="attribute-name">href</span>="<a href="view-source:https://www.eclipse.org/" class="attribute-value">https://www.eclipse.org/</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">logo-eclipse-default-mobile img-responsive</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">logo</a>" <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-800x188.png" class="attribute-value">/eclipse.org-common/themes/solstice/public/images/logo/eclipse-800x188.png</a>"<span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line177"></span>  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line178"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line179"></span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line180"></span>  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line181"></span></span><span>&lt;/<span class="end-tag">header</span>&gt;</span><span>
+<span id="line182"></span></span><span class="comment">&lt;!--  END OF SOLSTICE HEADER --&gt;</span><span>
+<span id="line183"></span>
+<span id="line184"></span></span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">border</span>="<a class="attribute-value">0</a>" <span class="attribute-name">cellspacing</span>="<a class="attribute-value">0</a>" <span class="attribute-name">cellpadding</span>="<a class="attribute-value">0</a>" <span class="attribute-name">id</span>="<a class="attribute-value">titles</a>"&gt;</span><span>
+<span id="line185"></span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line186"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">id</span>="<a class="attribute-value">title</a>"&gt;</span><span>
+<span id="line187"></span>      </span><span>&lt;<span class="start-tag">p</span>&gt;</span><span>Bugzilla <span class="entity"><span>&amp;</span>ndash;</span> Bug<span class="entity"><span>&amp;</span>nbsp;</span>1789</span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line188"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line189"></span>
+<span id="line190"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">id</span>="<a class="attribute-value">subtitle</a>"&gt;</span><span>
+<span id="line191"></span>      </span><span>&lt;<span class="start-tag">p</span> <span class="attribute-name">class</span>="<a class="attribute-value">subheader</a>"&gt;</span><span>DCR: New Script Wizard (1GF681B)</span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line192"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line193"></span>
+<span id="line194"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">id</span>="<a class="attribute-value">information</a>"&gt;</span><span>
+<span id="line195"></span>      </span><span>&lt;<span class="start-tag">p</span> <span class="attribute-name">class</span>="<a class="attribute-value">header_addl_info</a>"&gt;</span><span>Last modified: 2005-01-18 16:44:21 EST</span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line196"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line197"></span></span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line198"></span></span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line199"></span>
+<span id="line200"></span></span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">id</span>="<a class="attribute-value">lang_links_container</a>" <span class="attribute-name">cellpadding</span>="<a class="attribute-value">0</a>" <span class="attribute-name">cellspacing</span>="<a class="attribute-value">0</a>"
+<span id="line201"></span>       <span class="attribute-name">class</span>="<a class="attribute-value">bz_default_hidden</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line202"></span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line203"></span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">links</a>"&gt;</span><span>
+<span id="line204"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/" class="attribute-value">./</a>"&gt;</span><span>Home</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line205"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/enter_bug.cgi" class="attribute-value">enter_bug.cgi</a>"&gt;</span><span>New</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line206"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/describecomponents.cgi" class="attribute-value">describecomponents.cgi</a>"&gt;</span><span>Browse</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line207"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/query.cgi" class="attribute-value">query.cgi</a>"&gt;</span><span>Search</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line208"></span>
+<span id="line209"></span>  </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>="<a class="attribute-value">form</a>"&gt;</span><span>
+<span id="line210"></span>    </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line211"></span>    </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">action</span>="<a href="view-source:https://bugs.eclipse.org/bugs/buglist.cgi" class="attribute-value">buglist.cgi</a>" <span class="attribute-name">method</span>="<a class="attribute-value">get</a>"
+<span id="line212"></span>        <span class="attribute-name">onsubmit</span>="<a class="attribute-value">if (this.quicksearch.value == '')
+<span id="line213"></span>                  { alert('Please enter one or more search terms first.');
+<span id="line214"></span>                    return false; } return true;</a>"&gt;</span><span>
+<span id="line215"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">id</span>="<a class="attribute-value">no_redirect_top</a>" <span class="attribute-name">name</span>="<a class="attribute-value">no_redirect</a>" <span class="attribute-name">value</span>="<a class="attribute-value">0</a>"&gt;</span><span>
+<span id="line216"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line217"></span>      if (history &amp;&amp; history.replaceState) {
+<span id="line218"></span>        var no_redirect = document.getElementById("no_redirect_top");
+<span id="line219"></span>        no_redirect.value = 1;
+<span id="line220"></span>      }
+<span id="line221"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line222"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">txt</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" <span class="attribute-name">id</span>="<a class="attribute-value">quicksearch_top</a>" <span class="attribute-name">name</span>="<a class="attribute-value">quicksearch</a>" 
+<span id="line223"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Quick Search</a>" <span class="attribute-name">value</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line224"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">btn</a>" <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>" <span class="attribute-name">value</span>="<a class="attribute-value">Search</a>" 
+<span id="line225"></span>           <span class="attribute-name">id</span>="<a class="attribute-value">find_top</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line226"></span>  </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=quicksearch.html" class="attribute-value">page.cgi?id=quicksearch.html</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Quicksearch Help</a>"&gt;</span><span>[?]</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line227"></span>
+<span id="line228"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/report.cgi" class="attribute-value">report.cgi</a>"&gt;</span><span>Reports</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line229"></span>
+<span id="line230"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span>
+<span id="line231"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line232"></span>        </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/request.cgi" class="attribute-value">request.cgi</a>"&gt;</span><span>Requests</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line233"></span>
+<span id="line234"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span>
+<span id="line235"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line236"></span>        </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.bugzilla.org/docs/4.4/en/html/bug_page.html" class="attribute-value">http://www.bugzilla.org/docs/4.4/en/html/bug_page.html</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_blank</a>"&gt;</span><span>Help</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line237"></span>      </span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line238"></span>    
+<span id="line239"></span>
+<span id="line240"></span>    </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">id</span>="<a class="attribute-value">mini_login_container_top</a>"&gt;</span><span>
+<span id="line241"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line242"></span>  </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">id</span>="<a class="attribute-value">login_link_top</a>" <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789&amp;GoAheadAndLogIn=1" class="attribute-value">show_bug.cgi?id=1789<span class="entity"><span>&amp;</span>amp;</span>GoAheadAndLogIn=1</a>"
+<span id="line243"></span>     <span class="attribute-name">onclick</span>="<a class="attribute-value">return show_mini_login_form('_top')</a>"&gt;</span><span>Log In</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line244"></span>
+<span id="line245"></span>  
+<span id="line246"></span>  </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">action</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789" class="attribute-value">show_bug.cgi?id=1789</a>" <span class="attribute-name">method</span>="<a class="attribute-value">POST</a>" 
+<span id="line247"></span>        <span class="attribute-name">class</span>="<a class="attribute-value">mini_login bz_default_hidden</a>"
+<span id="line248"></span>        <span class="attribute-name">id</span>="<a class="attribute-value">mini_login_top</a>"
+<span id="line249"></span>        <span class="attribute-name">onsubmit</span>="<a class="attribute-value">return check_mini_login_fields( '_top' );</a>"
+<span id="line250"></span>  &gt;</span><span>
+<span id="line251"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">Bugzilla_login_top</a>" 
+<span id="line252"></span>           <span class="attribute-name">class</span>="<a class="attribute-value">bz_login</a>"
+<span id="line253"></span>           <span class="attribute-name">name</span>="<a class="attribute-value">Bugzilla_login</a>"
+<span id="line254"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Login</a>"
+<span id="line255"></span>           <span class="attribute-name">onfocus</span>="<a class="attribute-value">mini_login_on_focus('_top')</a>"
+<span id="line256"></span>    &gt;</span><span>
+<span id="line257"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_password</a>" 
+<span id="line258"></span>           <span class="attribute-name">id</span>="<a class="attribute-value">Bugzilla_password_top</a>" 
+<span id="line259"></span>           <span class="attribute-name">name</span>="<a class="attribute-value">Bugzilla_password</a>"
+<span id="line260"></span>           <span class="attribute-name">type</span>="<a class="attribute-value">password</a>"
+<span id="line261"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Password</a>"
+<span id="line262"></span>    &gt;</span><span>
+<span id="line263"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_password bz_default_hidden bz_mini_login_help</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" 
+<span id="line264"></span>           <span class="attribute-name">id</span>="<a class="attribute-value">Bugzilla_password_dummy_top</a>" <span class="attribute-name">value</span>="<a class="attribute-value">password</a>"
+<span id="line265"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Password</a>"
+<span id="line266"></span>           <span class="attribute-name">onfocus</span>="<a class="attribute-value">mini_login_on_focus('_top')</a>"
+<span id="line267"></span>    &gt;</span><span>
+<span id="line268"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">Bugzilla_login_token</a>"
+<span id="line269"></span>           <span class="attribute-name">value</span>="<a class="attribute-value">1466926021-zmAVw_qTgzW_WyjJ1I030i73YHLxLkojaJO0jUSbD24</a>"&gt;</span><span>
+<span id="line270"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>" <span class="attribute-name">name</span>="<a class="attribute-value">GoAheadAndLogIn</a>" <span class="attribute-name">value</span>="<a class="attribute-value">Log in</a>"
+<span id="line271"></span>            <span class="attribute-name">id</span>="<a class="attribute-value">log_in_top</a>"&gt;</span><span>
+<span id="line272"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line273"></span>      mini_login_constants = {
+<span id="line274"></span>          "login" : "login",
+<span id="line275"></span>          "warning" : "You must set the login and password before logging in."
+<span id="line276"></span>      };
+<span id="line277"></span>      
+<span id="line278"></span>      if (YAHOO.env.ua.gecko || YAHOO.env.ua.ie || YAHOO.env.ua.opera) {
+<span id="line279"></span>          YAHOO.util.Event.onDOMReady(function() {
+<span id="line280"></span>              init_mini_login_form('_top');
+<span id="line281"></span>          });
+<span id="line282"></span>      }
+<span id="line283"></span>      else {
+<span id="line284"></span>          YAHOO.util.Event.on(window, 'load', function () {
+<span id="line285"></span>              window.setTimeout(function() {
+<span id="line286"></span>                  init_mini_login_form('_top');
+<span id="line287"></span>              }, 200);
+<span id="line288"></span>          });
+<span id="line289"></span>    }
+<span id="line290"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line291"></span>    </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>" <span class="attribute-name">onclick</span>="<a class="attribute-value">return hide_mini_login_form('_top')</a>"&gt;</span><span>[x]</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line292"></span>  </span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line293"></span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line294"></span></span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">id</span>="<a class="attribute-value">forgot_container_top</a>"&gt;</span><span>
+<span id="line295"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line296"></span>  </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">id</span>="<a class="attribute-value">forgot_link_top</a>" <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789&amp;GoAheadAndLogIn=1#forgot" class="attribute-value">show_bug.cgi?id=1789<span class="entity"><span>&amp;</span>amp;</span>GoAheadAndLogIn=1#forgot</a>"
+<span id="line297"></span>     <span class="attribute-name">onclick</span>="<a class="attribute-value">return show_forgot_form('_top')</a>"&gt;</span><span>Forgot Password</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line298"></span>  </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">action</span>="<a href="view-source:https://bugs.eclipse.org/bugs/token.cgi" class="attribute-value">token.cgi</a>" <span class="attribute-name">method</span>="<a class="attribute-value">post</a>" <span class="attribute-name">id</span>="<a class="attribute-value">forgot_form_top</a>"
+<span id="line299"></span>        <span class="attribute-name">class</span>="<a class="attribute-value">mini_forgot bz_default_hidden</a>"&gt;</span><span>
+<span id="line300"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">login_top</a>"&gt;</span><span>Login:</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line301"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" <span class="attribute-name">name</span>="<a class="attribute-value">loginname</a>" <span class="attribute-name">size</span>="<a class="attribute-value">20</a>" <span class="attribute-name">id</span>="<a class="attribute-value">login_top</a>"&gt;</span><span>
+<span id="line302"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">forgot_button_top</a>" <span class="attribute-name">value</span>="<a class="attribute-value">Reset Password</a>" 
+<span id="line303"></span>           <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>"&gt;</span><span>
+<span id="line304"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">a</a>" <span class="attribute-name">value</span>="<a class="attribute-value">reqpw</a>"&gt;</span><span>
+<span id="line305"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">id</span>="<a class="attribute-value">token_top</a>" <span class="attribute-name">name</span>="<a class="attribute-value">token</a>" <span class="attribute-name">value</span>="<a class="attribute-value">1466926021-NsiADNgmQw2lxbje-g0saWOWJxNffpZyVPl8w5l5Vb4</a>"&gt;</span><span>
+<span id="line306"></span>    </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>" <span class="attribute-name">onclick</span>="<a class="attribute-value">return hide_forgot_form('_top')</a>"&gt;</span><span>[x]</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line307"></span>  </span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line308"></span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line309"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line310"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.eclipse.org/legal/termsofuse.php" class="attribute-value">http://www.eclipse.org/legal/termsofuse.php</a>"&gt;</span><span>Terms of Use</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line311"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line312"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.eclipse.org/legal/copyright.php" class="attribute-value">http://www.eclipse.org/legal/copyright.php</a>"&gt;</span><span>Copyright Agent</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line313"></span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>
+<span id="line314"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span> 
+<span id="line315"></span>
+<span id="line316"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">bugzilla-body</a>"&gt;</span><span>
+<span id="line317"></span>
+<span id="line318"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">navigation</a>"&gt;</span><span>
+<span id="line319"></span>  
+<span id="line320"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>First</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line321"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>Last</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line322"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>Prev</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line323"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>Next</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line324"></span>  <span class="entity"><span>&amp;</span>nbsp;</span><span class="entity"><span>&amp;</span>nbsp;</span>
+<span id="line325"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>This bug is not in your last
+<span id="line326"></span>    search results.</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line327"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line328"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line329"></span></span><span>&lt;!</span><span>--
+<span id="line330"></span>
+<span id="line331"></span>//--&gt;
+<span id="line332"></span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line333"></span>
+<span id="line334"></span></span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">name</span>="<a class="attribute-value">changeform</a>" <span class="attribute-name">id</span>="<a class="attribute-value">changeform</a>" <span class="attribute-name">method</span>="<a class="attribute-value">post</a>" <span class="attribute-name">action</span>="<a href="view-source:https://bugs.eclipse.org/bugs/process_bug.cgi" class="attribute-value">process_bug.cgi</a>"&gt;</span><span>
+<span id="line335"></span>
+<span id="line336"></span>  </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">delta_ts</a>" <span class="attribute-name">value</span>="<a class="attribute-value">2005-01-18 16:44:21</a>"&gt;</span><span>
+<span id="line337"></span>  </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">longdesclength</a>" <span class="attribute-name">value</span>="<a class="attribute-value">3</a>"&gt;</span><span>
+<span id="line338"></span>  </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">id</a>" <span class="attribute-name">value</span>="<a class="attribute-value">1789</a>"&gt;</span><span>
+<span id="line339"></span>  </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">token</a>" <span class="attribute-name">value</span>="<a class="attribute-value">1466926021-ugpDom6DbEyqtnxWayjItsoUW3JAkiNhMzzDoIVbMlE</a>"&gt;</span><span>
+<span id="line340"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_alias_short_desc_container edit_form</a>"&gt;</span><span>
+<span id="line341"></span>     </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789" class="attribute-value">show_bug.cgi?id=1789</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">b</span>&gt;</span><span>Bug<span class="entity"><span>&amp;</span>nbsp;</span>1789</span><span>&lt;/<span class="end-tag">b</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span> -</span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">id</span>="<a class="attribute-value">summary_alias_container</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_default_hidden</a>"&gt;</span><span> 
+<span id="line342"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">id</span>="<a class="attribute-value">short_desc_nonedit_display</a>"&gt;</span><span>DCR: New Script Wizard (1GF681B)</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line343"></span>     </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line344"></span>  
+<span id="line345"></span>       
+<span id="line346"></span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">summary_alias_input</a>"&gt;</span><span>
+<span id="line347"></span>      </span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">id</span>="<a class="attribute-value">summary</a>"&gt;</span><span> 
+<span id="line348"></span>        </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line349"></span>            </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>"&gt;</span><span>
+<span id="line350"></span>          </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line351"></span>        </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line352"></span>        
+<span id="line353"></span>        </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line354"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_short_desc</a>"&gt;</span><span>
+<span id="line355"></span>
+<span id="line356"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">short_desc</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">s</a>"&gt;</span><span>
+<span id="line357"></span>
+<span id="line358"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line359"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">The bug summary is a short sentence which succinctly describes what the bug is about.</a>"
+<span id="line360"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line361"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#short_desc" class="attribute-value">page.cgi?id=fields.html#short_desc</a>"
+<span id="line362"></span>  &gt;</span><span>Summary:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line363"></span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line364"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line365"></span>          </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>DCR: New Script Wizard (1GF681B)
+<span id="line366"></span>          </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line367"></span>        </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line368"></span>      </span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line369"></span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line370"></span>  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line371"></span>  </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line372"></span>    hideAliasAndSummary('DCR: New Script Wizard (1GF681B)', '');
+<span id="line373"></span>  </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line374"></span>  </span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">class</span>="<a class="attribute-value">edit_form</a>"&gt;</span><span>
+<span id="line375"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line376"></span>      
+<span id="line377"></span>      </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">id</span>="<a class="attribute-value">bz_show_bug_column_1</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_show_bug_column</a>"&gt;</span><span>     
+<span id="line378"></span>        </span><span>&lt;<span class="start-tag">table</span>&gt;</span><span>
+<span id="line379"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line380"></span>    </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line381"></span>      </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#bug_status" class="attribute-value">page.cgi?id=fields.html#bug_status</a>"&gt;</span><span>Status</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>:
+<span id="line382"></span>    </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line383"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">id</span>="<a class="attribute-value">bz_field_status</a>"&gt;</span><span>
+<span id="line384"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">id</span>="<a class="attribute-value">static_bug_status</a>"&gt;</span><span>RESOLVED
+<span id="line385"></span>          INVALID
+<span id="line386"></span>      </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line387"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line388"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line389"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line390"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_section_spacer</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line391"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line392"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line393"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_product</a>"&gt;</span><span>
+<span id="line394"></span>
+<span id="line395"></span>
+<span id="line396"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line397"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">Bugs are categorised into Products and Components. Select a Classification to narrow down this list.</a>"
+<span id="line398"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line399"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/describecomponents.cgi" class="attribute-value">describecomponents.cgi</a>"
+<span id="line400"></span>  &gt;</span><span>Product:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line401"></span>
+<span id="line402"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line403"></span>  </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_value </a>"
+<span id="line404"></span>      <span class="attribute-name">id</span>="<a class="attribute-value">field_container_product</a>" &gt;</span><span>Platform</span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line405"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line406"></span>
+<span id="line407"></span>    
+<span id="line408"></span>    </span><span>&lt;<span class="start-tag">tr</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_default_hidden</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line409"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_classification</a>"&gt;</span><span>
+<span id="line410"></span>
+<span id="line411"></span>
+<span id="line412"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line413"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">Bugs are categorised into Classifications, Products and Components. classifications is the top-level categorisation.</a>"
+<span id="line414"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line415"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#classification" class="attribute-value">page.cgi?id=fields.html#classification</a>"
+<span id="line416"></span>  &gt;</span><span>Classification:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line417"></span>
+<span id="line418"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line419"></span>  </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_value </a>"
+<span id="line420"></span>      <span class="attribute-name">id</span>="<a class="attribute-value">field_container_classification</a>" &gt;</span><span>Eclipse</span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line421"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line422"></span>        
+<span id="line423"></span>    
+<span id="line424"></span>    
+<span id="line425"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line426"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_component</a>"&gt;</span><span>
+<span id="line427"></span>
+<span id="line428"></span>
+<span id="line429"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line430"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">Components are second-level categories; each belongs to a particular Product. Select a Product to narrow down this list.</a>"
+<span id="line431"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line432"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/describecomponents.cgi?product=Platform" class="attribute-value">describecomponents.cgi?product=Platform</a>"
+<span id="line433"></span>  &gt;</span><span>Component:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line434"></span>
+<span id="line435"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line436"></span>  </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_value </a>"
+<span id="line437"></span>      <span class="attribute-name">id</span>="<a class="attribute-value">field_container_component</a>" &gt;</span><span>Scripting</span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line438"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line439"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line440"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_version</a>"&gt;</span><span>
+<span id="line441"></span>
+<span id="line442"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">version</a>"&gt;</span><span>
+<span id="line443"></span>
+<span id="line444"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line445"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">The version field defines the version of the software the bug was found in.</a>"
+<span id="line446"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line447"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#version" class="attribute-value">page.cgi?id=fields.html#version</a>"
+<span id="line448"></span>  &gt;</span><span>Version:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line449"></span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line450"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span></span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>2.0
+<span id="line451"></span>  </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line452"></span>  
+<span id="line453"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line454"></span>        
+<span id="line455"></span>    
+<span id="line456"></span>        
+<span id="line457"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line458"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_rep_platform</a>"&gt;</span><span>
+<span id="line459"></span>
+<span id="line460"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">rep_platform</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">h</a>"&gt;</span><span>
+<span id="line461"></span>
+<span id="line462"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line463"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">The hardware platform the bug was observed on. Note: When searching, selecting the option <span class="entity"><span>&amp;</span>quot;</span>All<span class="entity"><span>&amp;</span>quot;</span> only finds bugs whose value for this field is literally the word <span class="entity"><span>&amp;</span>quot;</span>All<span class="entity"><span>&amp;</span>quot;</span>.</a>"
+<span id="line464"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line465"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#rep_platform" class="attribute-value">page.cgi?id=fields.html#rep_platform</a>"
+<span id="line466"></span>  &gt;</span><span>Hardware:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line467"></span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line468"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line469"></span>      </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_value</a>"&gt;</span><span>All
+<span id="line470"></span>       All
+<span id="line471"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line472"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line473"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line474"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_section_spacer</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line475"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line476"></span>          
+<span id="line477"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line478"></span>      </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line479"></span>        </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">priority</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">i</a>"&gt;</span><span>
+<span id="line480"></span>          </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#importance" class="attribute-value">page.cgi?id=fields.html#importance</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">u</span>&gt;</span><span>I</span><span>&lt;/<span class="end-tag">u</span>&gt;</span><span>mportance</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>:
+<span id="line481"></span>      </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line482"></span>      </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>P3
+<span id="line483"></span>       normal</span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">id</span>="<a class="attribute-value">votes_container</a>"&gt;</span><span>
+<span id="line484"></span>    (</span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=voting/user.html&amp;bug_id=1789#vote_1789" class="attribute-value">page.cgi?id=voting/user.html<span class="entity"><span>&amp;</span>amp;</span>bug_id=1789#vote_1789</a>"&gt;</span><span>vote</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>)
+<span id="line485"></span>  </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line486"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line487"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line488"></span>
+<span id="line489"></span>      </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line490"></span>        </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line491"></span>          </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">target_milestone</a>"&gt;</span><span>
+<span id="line492"></span>            </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#target_milestone" class="attribute-value">page.cgi?id=fields.html#target_milestone</a>"&gt;</span><span>
+<span id="line493"></span>            Target<span class="entity"><span>&amp;</span>nbsp;</span>Milestone</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>:
+<span id="line494"></span>        </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span></span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>---
+<span id="line495"></span>  </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line496"></span>      </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>            
+<span id="line497"></span>          
+<span id="line498"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line499"></span>      </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line500"></span>        </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#assigned_to" class="attribute-value">page.cgi?id=fields.html#assigned_to</a>"&gt;</span><span>Assigned To</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>:
+<span id="line501"></span>      </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line502"></span>      </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">vcard</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">fn</a>"&gt;</span><span>Vlad Klicnik</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://wiki.eclipse.org/CLA" class="attribute-value">http://wiki.eclipse.org/CLA</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=klicnik@ca.ibm.com" class="attribute-value">https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=klicnik<span class="entity"><span>&amp;</span>#64;</span>ca.ibm.com</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">CLA</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Contributor License Agreement</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://eclipse.org/donate/" class="attribute-value">https://eclipse.org/donate/</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://www.eclipse.org/donate/web-api/friends_decorator.php?email=klicnik@ca.ibm.com" class="attribute-value">//www.eclipse.org/donate/web-api/friends_decorator.php?email=klicnik<span class="entity"><span>&amp;</span>#64;</span>ca.ibm.com</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">Friend</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Friend of Eclipse</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line503"></span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line504"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line505"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line506"></span>
+<span id="line507"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line508"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_qa_contact</a>"&gt;</span><span>
+<span id="line509"></span>
+<span id="line510"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">qa_contact</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">q</a>"&gt;</span><span>
+<span id="line511"></span>
+<span id="line512"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line513"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">The person responsible for confirming this bug if it is unconfirmed, and for verifying the fix once the bug has been resolved.</a>"
+<span id="line514"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line515"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#qa_contact" class="attribute-value">page.cgi?id=fields.html#qa_contact</a>"
+<span id="line516"></span>  &gt;</span><span>QA Contact:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line517"></span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line518"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line519"></span>      </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">vcard</a>"&gt;</span><span>
+<span id="line520"></span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line521"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line522"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line523"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line524"></span>      assignToDefaultOnChange(['product', 'component'],
+<span id="line525"></span>        'platform-scripting-inbox\x40eclipse.org',
+<span id="line526"></span>        '');
+<span id="line527"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line528"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line529"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_section_spacer</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line530"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line531"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line532"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_bug_file_loc</a>"&gt;</span><span>
+<span id="line533"></span>
+<span id="line534"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">bug_file_loc</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">u</a>"&gt;</span><span>
+<span id="line535"></span>
+<span id="line536"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line537"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">Bugs can have a URL associated with them - for example, a pointer to a web site where the problem is seen.</a>"
+<span id="line538"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line539"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#bug_file_loc" class="attribute-value">page.cgi?id=fields.html#bug_file_loc</a>"
+<span id="line540"></span>  &gt;</span><span>URL:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line541"></span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line542"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line543"></span>    </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line544"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">id</span>="<a class="attribute-value">bz_url_input_area</a>"&gt;</span><span>
+<span id="line545"></span>      </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line546"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line547"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line548"></span>  
+<span id="line549"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line550"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_status_whiteboard</a>"&gt;</span><span>
+<span id="line551"></span>
+<span id="line552"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">status_whiteboard</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">w</a>"&gt;</span><span>
+<span id="line553"></span>
+<span id="line554"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line555"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">Each bug has a free-form single line text entry box for adding tags and status information.</a>"
+<span id="line556"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line557"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#status_whiteboard" class="attribute-value">page.cgi?id=fields.html#status_whiteboard</a>"
+<span id="line558"></span>  &gt;</span><span>Whiteboard:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line559"></span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line560"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span></span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>"&gt;</span><span>  
+<span id="line561"></span>  </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line562"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line563"></span>  
+<span id="line564"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line565"></span>      </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line566"></span>        </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">keywords</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">k</a>"&gt;</span><span>
+<span id="line567"></span>          </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/describekeywords.cgi" class="attribute-value">describekeywords.cgi</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">u</span>&gt;</span><span>K</span><span>&lt;/<span class="end-tag">u</span>&gt;</span><span>eywords</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>:
+<span id="line568"></span>      </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line569"></span>      </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_value</a>" <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>"&gt;</span><span>
+<span id="line570"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line571"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line572"></span>          </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line573"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_section_spacer</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line574"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line575"></span>
+<span id="line576"></span>          
+<span id="line577"></span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line578"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_dependson</a>"&gt;</span><span>
+<span id="line579"></span>
+<span id="line580"></span>
+<span id="line581"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line582"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">The bugs listed here must be resolved before this bug can be resolved.</a>"
+<span id="line583"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line584"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#dependson" class="attribute-value">page.cgi?id=fields.html#dependson</a>"
+<span id="line585"></span>  &gt;</span><span>Depends on:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line586"></span>
+<span id="line587"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line588"></span>
+<span id="line589"></span>  </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line590"></span>    </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">id</span>="<a class="attribute-value">dependson_input_area</a>"&gt;</span><span>
+<span id="line591"></span>    </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line592"></span>    
+<span id="line593"></span>  </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line594"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line595"></span>  
+<span id="line596"></span>  </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line597"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_blocked</a>"&gt;</span><span>
+<span id="line598"></span>
+<span id="line599"></span>
+<span id="line600"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line601"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">This bug must be resolved before the bugs listed in this field can be resolved.</a>"
+<span id="line602"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line603"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#blocked" class="attribute-value">page.cgi?id=fields.html#blocked</a>"
+<span id="line604"></span>  &gt;</span><span>Blocks:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line605"></span>
+<span id="line606"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line607"></span>
+<span id="line608"></span>  </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line609"></span>    </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">id</span>="<a class="attribute-value">blocked_input_area</a>"&gt;</span><span>
+<span id="line610"></span>    </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line611"></span>    
+<span id="line612"></span>  </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line613"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line614"></span>  
+<span id="line615"></span>  </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line616"></span>    </span><span>&lt;<span class="start-tag">th</span>&gt;</span><span><span class="entity"><span>&amp;</span>nbsp;</span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line617"></span>  
+<span id="line618"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">align</span>="<a class="attribute-value">left</a>" <span class="attribute-name">id</span>="<a class="attribute-value">show_dependency_tree_or_graph</a>"&gt;</span><span>
+<span id="line619"></span>      Show dependency </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=1789&amp;hide_resolved=1" class="attribute-value">showdependencytree.cgi?id=1789<span class="entity"><span>&amp;</span>amp;</span>hide_resolved=1</a>"&gt;</span><span>tree</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line620"></span>  
+<span id="line621"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line622"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line623"></span>          
+<span id="line624"></span>        </span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line625"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line626"></span>      </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line627"></span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_column_spacer</a>"&gt;</span><span><span class="entity"><span>&amp;</span>nbsp;</span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line628"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line629"></span>      
+<span id="line630"></span>      </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">id</span>="<a class="attribute-value">bz_show_bug_column_2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_show_bug_column</a>"&gt;</span><span>
+<span id="line631"></span>        </span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">cellpadding</span>="<a class="attribute-value">3</a>" <span class="attribute-name">cellspacing</span>="<a class="attribute-value">1</a>"&gt;</span><span>
+<span id="line632"></span>        </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line633"></span>    </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line634"></span>      Reported:
+<span id="line635"></span>    </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line636"></span>    </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>2001-10-10 22:19 EDT by </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">vcard</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">fn</a>"&gt;</span><span>Unknown User</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://wiki.eclipse.org/CLA" class="attribute-value">http://wiki.eclipse.org/CLA</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=unknown@eclipse.org" class="attribute-value">https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=unknown<span class="entity"><span>&amp;</span>#64;</span>eclipse.org</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">CLA</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Contributor License Agreement</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://eclipse.org/donate/" class="attribute-value">https://eclipse.org/donate/</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://www.eclipse.org/donate/web-api/friends_decorator.php?email=unknown@eclipse.org" class="attribute-value">//www.eclipse.org/donate/web-api/friends_decorator.php?email=unknown<span class="entity"><span>&amp;</span>#64;</span>eclipse.org</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">Friend</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Friend of Eclipse</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line637"></span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line638"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line639"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line640"></span>  
+<span id="line641"></span>  </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line642"></span>    </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line643"></span>      Modified:
+<span id="line644"></span>    </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line645"></span>    </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>2005-01-18 16:44 EST 
+<span id="line646"></span>      (</span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_activity.cgi?id=1789" class="attribute-value">show_activity.cgi?id=1789</a>"&gt;</span><span>History</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>)
+<span id="line647"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line648"></span>  
+<span id="line649"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line650"></span>         </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line651"></span>      </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label</a>"&gt;</span><span>
+<span id="line652"></span>        </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">newcc</a>" <span class="attribute-name">accesskey</span>="<a class="attribute-value">a</a>"&gt;</span><span>CC List:</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line653"></span>      </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line654"></span>      </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>0 
+<span id="line655"></span>          users
+<span id="line656"></span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">cc_edit_area</a>"&gt;</span><span>
+<span id="line657"></span>          </span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>
+<span id="line658"></span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line659"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line660"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line661"></span>         </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line662"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_section_spacer</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line663"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line664"></span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_label </a>"
+<span id="line665"></span>    <span class="attribute-name">id</span>="<a class="attribute-value">field_label_see_also</a>"&gt;</span><span>
+<span id="line666"></span>
+<span id="line667"></span>
+<span id="line668"></span>  </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line669"></span>      <span class="attribute-name">title</span>="<a class="attribute-value">This
+ allows you to refer to bugs in other installations. You can enter a URL
+ to a bug in the 'Add Bug URLs' field to note that that bug is related 
+to this one. You can enter multiple URLs at once by separating them with
+ a comma. You should normally use this field to refer to bugs in other 
+installations. For bugs in this installation, it is better to use the 
+Depends on and Blocks fields.</a>"
+<span id="line670"></span>      <span class="attribute-name">class</span>="<a class="attribute-value">field_help_link</a>"
+<span id="line671"></span>      <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=fields.html#see_also" class="attribute-value">page.cgi?id=fields.html#see_also</a>"
+<span id="line672"></span>  &gt;</span><span>See Also:</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line673"></span>
+<span id="line674"></span></span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line675"></span>  </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">field_value </a>"
+<span id="line676"></span>      <span class="attribute-name">id</span>="<a class="attribute-value">field_container_see_also</a>" &gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line677"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span> 
+<span id="line678"></span>         
+<span id="line679"></span>         </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line680"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_section_spacer</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line681"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line682"></span>         
+<span id="line683"></span>                
+<span id="line684"></span>
+<span id="line685"></span>        </span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line686"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line687"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line688"></span>    </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line689"></span>      </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">3</a>"&gt;</span><span>
+<span id="line690"></span>          </span><span>&lt;<span class="start-tag">hr</span> <span class="attribute-name">id</span>="<a class="attribute-value">bz_top_half_spacer</a>"&gt;</span><span>
+<span id="line691"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line692"></span>    </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line693"></span>  </span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line694"></span>
+<span id="line695"></span>  </span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">id</span>="<a class="attribute-value">bz_big_form_parts</a>" <span class="attribute-name">cellspacing</span>="<a class="attribute-value">0</a>" <span class="attribute-name">cellpadding</span>="<a class="attribute-value">0</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line696"></span>  </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line697"></span>
+<span id="line698"></span>    
+<span id="line699"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line700"></span></span><span>&lt;!</span><span>--
+<span id="line701"></span>function toggle_display(link) {
+<span id="line702"></span>    var table = document.getElementById("attachment_table");
+<span id="line703"></span>    var view_all = document.getElementById("view_all");
+<span id="line704"></span>    var hide_obsolete_url_parameter = "&amp;hide_obsolete=1";
+<span id="line705"></span>    // Store current height for scrolling later
+<span id="line706"></span>    var originalHeight = table.offsetHeight;
+<span id="line707"></span>    var rows = YAHOO.util.Dom.getElementsByClassName(
+<span id="line708"></span>        'bz_tr_obsolete', 'tr', table);
+<span id="line709"></span>
+<span id="line710"></span>    for (var i = 0; i </span><span>&lt; </span><span>rows.length; i++) {
+<span id="line711"></span>        bz_toggleClass(rows[i], 'bz_default_hidden');
+<span id="line712"></span>    }
+<span id="line713"></span>
+<span id="line714"></span>    if (YAHOO.util.Dom.hasClass(rows[0], 'bz_default_hidden')) {
+<span id="line715"></span>        link.innerHTML = "Show Obsolete";
+<span id="line716"></span>        view_all.href = view_all.href + hide_obsolete_url_parameter 
+<span id="line717"></span>    }
+<span id="line718"></span>    else {
+<span id="line719"></span>        link.innerHTML = "Hide Obsolete";
+<span id="line720"></span>        view_all.href = view_all.href.replace(hide_obsolete_url_parameter,"");
+<span id="line721"></span>    }
+<span id="line722"></span>
+<span id="line723"></span>    var newHeight = table.offsetHeight;
+<span id="line724"></span>    // This scrolling makes the window appear to not move at all.
+<span id="line725"></span>    window.scrollBy(0, newHeight - originalHeight);
+<span id="line726"></span>
+<span id="line727"></span>    return false;
+<span id="line728"></span>}
+<span id="line729"></span>//--&gt;
+<span id="line730"></span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line731"></span>
+<span id="line732"></span></span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>
+<span id="line733"></span></span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">id</span>="<a class="attribute-value">attachment_table</a>" <span class="attribute-name">cellspacing</span>="<a class="attribute-value">0</a>" <span class="attribute-name">cellpadding</span>="<a class="attribute-value">4</a>"&gt;</span><span>
+<span id="line734"></span>  </span><span>&lt;<span class="start-tag">tr</span> <span class="attribute-name">id</span>="<a class="attribute-value">a0</a>"&gt;</span><span>
+<span id="line735"></span>    </span><span>&lt;<span class="start-tag">th</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">3</a>" <span class="attribute-name">align</span>="<a class="attribute-value">left</a>"&gt;</span><span>
+<span id="line736"></span>      Attachments
+<span id="line737"></span>    </span><span>&lt;/<span class="end-tag">th</span>&gt;</span><span>
+<span id="line738"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line739"></span>
+<span id="line740"></span>
+<span id="line741"></span>
+<span id="line742"></span>  </span><span>&lt;<span class="start-tag">tr</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_attach_footer</a>"&gt;</span><span>
+<span id="line743"></span>    </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>="<a class="attribute-value">3</a>"&gt;</span><span>
+<span id="line744"></span>        </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/attachment.cgi?bugid=1789&amp;action=enter" class="attribute-value">attachment.cgi?bugid=1789<span class="entity"><span>&amp;</span>amp;</span>action=enter</a>"&gt;</span><span>Add an attachment</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line745"></span>        (proposed patch, testcase, etc.)
+<span id="line746"></span>    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line747"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line748"></span></span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line749"></span></span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>
+<span id="line750"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">add_comment</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_section_additional_comments</a>"&gt;</span><span>
+<span id="line751"></span>      </span><span>&lt;<span class="start-tag">table</span>&gt;</span><span>
+<span id="line752"></span>        </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line753"></span>          </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line754"></span>            </span><span>&lt;<span class="start-tag">fieldset</span>&gt;</span><span>
+<span id="line755"></span>              </span><span>&lt;<span class="start-tag">legend</span>&gt;</span><span>Note</span><span>&lt;/<span class="end-tag">legend</span>&gt;</span><span>
+<span id="line756"></span>              You need to
+<span id="line757"></span>              </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789&amp;GoAheadAndLogIn=1" class="attribute-value">show_bug.cgi?id=1789<span class="entity"><span>&amp;</span>amp;</span>GoAheadAndLogIn=1</a>"&gt;</span><span>log in</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line758"></span>              before you can comment on or make changes to this bug.
+<span id="line759"></span>            </span><span>&lt;/<span class="end-tag">fieldset</span>&gt;</span><span>
+<span id="line760"></span>          </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line761"></span>        </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span> 
+<span id="line762"></span>      </span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line763"></span>  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line764"></span>  </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line765"></span>  </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line766"></span>  </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line767"></span>  </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line768"></span>
+<span id="line769"></span>  
+<span id="line770"></span>  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">comments</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a href="view-source:https://bugs.eclipse.org/bugs/js/comments.js?1369324972" class="attribute-value">js/comments.js?1369324972</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line771"></span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line772"></span>
+<span id="line773"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line774"></span></span><span>&lt;!</span><span>--
+<span id="line775"></span>  /* Adds the reply text to the `comment' textarea */
+<span id="line776"></span>  function replyToComment(id, real_id, name) {
+<span id="line777"></span>      var prefix = "(In reply to " + name + " from comment #" + id + ")\n";
+<span id="line778"></span>      var replytext = "";
+<span id="line779"></span>        /* pre id="comment_name_N" */
+<span id="line780"></span>        var text_elem = document.getElementById('comment_text_'+id);
+<span id="line781"></span>        var text = getText(text_elem);
+<span id="line782"></span>        replytext = prefix + wrapReplyText(text);
+<span id="line783"></span>
+<span id="line784"></span>
+<span id="line785"></span>      /* </span><span>&lt;t</span><span>extarea id="comment"&gt; */
+<span id="line786"></span>      var textarea = document.getElementById('comment');
+<span id="line787"></span>      if (textarea.value != replytext) {
+<span id="line788"></span>          textarea.value += replytext;
+<span id="line789"></span>      }
+<span id="line790"></span>
+<span id="line791"></span>      textarea.focus();
+<span id="line792"></span>  } 
+<span id="line793"></span>//--&gt;
+<span id="line794"></span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line795"></span>
+<span id="line796"></span>
+<span id="line797"></span>
+<span id="line798"></span>
+<span id="line799"></span></span><span class="comment">&lt;!-- This auto-sizes the comments and positions the collapse/expand links 
+<span id="line800"></span>     to the right. --&gt;</span><span>
+<span id="line801"></span></span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_table</a>" <span class="attribute-name">cellpadding</span>="<a class="attribute-value">0</a>" <span class="attribute-name">cellspacing</span>="<a class="attribute-value">0</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line802"></span></span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line803"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">c0</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment bz_first_comment</a>"&gt;</span><span>
+<span id="line804"></span>
+<span id="line805"></span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_first_comment_head</a>"&gt;</span><span>
+<span id="line806"></span>
+<span id="line807"></span>
+<span id="line808"></span>
+<span id="line809"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_number</a>"&gt;</span><span>
+<span id="line810"></span>          </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line811"></span>             <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#c0" class="attribute-value">show_bug.cgi?id=1789#c0</a>"&gt;</span><span>Description</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line812"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line813"></span>
+<span id="line814"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_user</a>"&gt;</span><span>
+<span id="line815"></span>          </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">vcard</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">fn</a>"&gt;</span><span>Unknown User</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://wiki.eclipse.org/CLA" class="attribute-value">http://wiki.eclipse.org/CLA</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=unknown63@eclipse.org" class="attribute-value">https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=unknown63<span class="entity"><span>&amp;</span>#64;</span>eclipse.org</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">CLA</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Contributor License Agreement</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://eclipse.org/donate/" class="attribute-value">https://eclipse.org/donate/</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://www.eclipse.org/donate/web-api/friends_decorator.php?email=unknown63@eclipse.org" class="attribute-value">//www.eclipse.org/donate/web-api/friends_decorator.php?email=unknown63<span class="entity"><span>&amp;</span>#64;</span>eclipse.org</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">Friend</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Friend of Eclipse</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line816"></span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line817"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line818"></span>
+<span id="line819"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_user_images</a>"&gt;</span><span>
+<span id="line820"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line821"></span>
+<span id="line822"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_time</a>"&gt;</span><span>
+<span id="line823"></span>          2001-10-10 22:19:21 EDT
+<span id="line824"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line825"></span>      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line826"></span>
+<span id="line827"></span>
+<span id="line828"></span>
+<span id="line829"></span></span><span>&lt;<span class="start-tag">pre</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_text</a>" &gt;</span><span>It took me 30 minutes to figure out how to create a script file.  If a <span class="entity"><span>&amp;</span>quot;</span>New Script Wizard<span class="entity"><span>&amp;</span>quot;</span>
+<span id="line830"></span>was available to create the initial contents of the .xhtml file I think it would be much
+<span id="line831"></span>clearer.
+<span id="line832"></span>
+<span id="line833"></span>NOTES:
+<span id="line834"></span>	BF (2001/06/12 09:31:39)
+<span id="line835"></span>		Agreed.  This would also help the initial seeding problem in PR 1GF67SF: Script Contents are Lost.</span><span>&lt;/<span class="end-tag">pre</span>&gt;</span><span>
+<span id="line836"></span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">c1</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment</a>"&gt;</span><span>
+<span id="line837"></span>
+<span id="line838"></span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_head</a>"&gt;</span><span>
+<span id="line839"></span>
+<span id="line840"></span>
+<span id="line841"></span>
+<span id="line842"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_number</a>"&gt;</span><span>
+<span id="line843"></span>          </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line844"></span>             <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#c1" class="attribute-value">show_bug.cgi?id=1789#c1</a>"&gt;</span><span>Comment 1</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line845"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line846"></span>
+<span id="line847"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_user</a>"&gt;</span><span>
+<span id="line848"></span>          </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">vcard</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">fn</a>"&gt;</span><span>DJ Houghton</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://wiki.eclipse.org/CLA" class="attribute-value">http://wiki.eclipse.org/CLA</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=dj.houghton@ca.ibm.com" class="attribute-value">https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=dj.houghton<span class="entity"><span>&amp;</span>#64;</span>ca.ibm.com</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">CLA</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Contributor License Agreement</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://eclipse.org/donate/" class="attribute-value">https://eclipse.org/donate/</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://www.eclipse.org/donate/web-api/friends_decorator.php?email=dj.houghton@ca.ibm.com" class="attribute-value">//www.eclipse.org/donate/web-api/friends_decorator.php?email=dj.houghton<span class="entity"><span>&amp;</span>#64;</span>ca.ibm.com</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">Friend</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Friend of Eclipse</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line849"></span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line850"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line851"></span>
+<span id="line852"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_user_images</a>"&gt;</span><span>
+<span id="line853"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line854"></span>
+<span id="line855"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_time</a>"&gt;</span><span>
+<span id="line856"></span>          2001-10-24 07:06:48 EDT
+<span id="line857"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line858"></span>      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line859"></span>
+<span id="line860"></span>
+<span id="line861"></span>
+<span id="line862"></span></span><span>&lt;<span class="start-tag">pre</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_text</a>" &gt;</span><span>PRODUCT VERSION:
+<span id="line863"></span>
+<span id="line864"></span>Eclipse 0.122 on jdk
+<span id="line865"></span>
+<span id="line866"></span></span><span>&lt;/<span class="end-tag">pre</span>&gt;</span><span>
+<span id="line867"></span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">c2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment</a>"&gt;</span><span>
+<span id="line868"></span>
+<span id="line869"></span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_head</a>"&gt;</span><span>
+<span id="line870"></span>
+<span id="line871"></span>
+<span id="line872"></span>
+<span id="line873"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_number</a>"&gt;</span><span>
+<span id="line874"></span>          </span><span>&lt;<span class="start-tag">a</span> 
+<span id="line875"></span>             <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#c2" class="attribute-value">show_bug.cgi?id=1789#c2</a>"&gt;</span><span>Comment 2</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line876"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line877"></span>
+<span id="line878"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_user</a>"&gt;</span><span>
+<span id="line879"></span>          </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">vcard</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">fn</a>"&gt;</span><span>Kevin Haaland</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://wiki.eclipse.org/CLA" class="attribute-value">http://wiki.eclipse.org/CLA</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=Kevin_Haaland@ca.ibm.com" class="attribute-value">https://dev.eclipse.org/site_login/web-api/cla_decorator.php?email=Kevin_Haaland<span class="entity"><span>&amp;</span>#64;</span>ca.ibm.com</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">CLA</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Contributor License Agreement</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://eclipse.org/donate/" class="attribute-value">https://eclipse.org/donate/</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">cla_dec</a>" <span class="attribute-name">src</span>="<a href="view-source:https://www.eclipse.org/donate/web-api/friends_decorator.php?email=Kevin_Haaland@ca.ibm.com" class="attribute-value">//www.eclipse.org/donate/web-api/friends_decorator.php?email=Kevin_Haaland<span class="entity"><span>&amp;</span>#64;</span>ca.ibm.com</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">Friend</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Friend of Eclipse</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line880"></span></span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line881"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line882"></span>
+<span id="line883"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_user_images</a>"&gt;</span><span>
+<span id="line884"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line885"></span>
+<span id="line886"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_time</a>"&gt;</span><span>
+<span id="line887"></span>          2002-10-21 11:21:54 EDT
+<span id="line888"></span>        </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line889"></span>      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line890"></span>
+<span id="line891"></span>
+<span id="line892"></span>
+<span id="line893"></span></span><span>&lt;<span class="start-tag">pre</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_comment_text</a>" &gt;</span><span>Invalid defect. Scripting support has been removed. </span><span>&lt;/<span class="end-tag">pre</span>&gt;</span><span>
+<span id="line894"></span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line895"></span>
+<span id="line896"></span>
+<span id="line897"></span>  
+<span id="line898"></span>
+<span id="line899"></span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line900"></span></span><span>&lt;<span class="start-tag">td</span>&gt;</span><span>
+<span id="line901"></span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line902"></span></span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line903"></span>  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line904"></span>        
+<span id="line905"></span>
+<span id="line906"></span></span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line907"></span>
+<span id="line908"></span></span><span>&lt;<span class="start-tag">hr</span>&gt;</span><span>
+<span id="line909"></span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">related_actions</a>"&gt;</span><span>
+<span id="line910"></span>    </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?format=multiple&amp;id=1789" class="attribute-value">show_bug.cgi?format=multiple<span class="entity"><span>&amp;</span>amp;</span>id=1789</a>"&gt;</span><span>Format For Printing</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line911"></span>    </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span><span class="entity"><span>&amp;</span>nbsp;</span>-<span class="entity"><span>&amp;</span>nbsp;</span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?ctype=xml&amp;id=1789" class="attribute-value">show_bug.cgi?ctype=xml<span class="entity"><span>&amp;</span>amp;</span>id=1789</a>"&gt;</span><span>XML</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line912"></span>    </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span><span class="entity"><span>&amp;</span>nbsp;</span>-<span class="entity"><span>&amp;</span>nbsp;</span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/enter_bug.cgi?cloned_bug_id=1789" class="attribute-value">enter_bug.cgi?cloned_bug_id=1789</a>"&gt;</span><span>Clone This Bug</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line913"></span>    
+<span id="line914"></span>    </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span><span class="entity"><span>&amp;</span>nbsp;</span>-<span class="entity"><span>&amp;</span>nbsp;</span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>"&gt;</span><span>Top of page </span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line915"></span>    </span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>        
+<span id="line916"></span>
+<span id="line917"></span>
+<span id="line918"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">navigation</a>"&gt;</span><span>
+<span id="line919"></span>  
+<span id="line920"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>First</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line921"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>Last</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line922"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>Prev</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line923"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>Next</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line924"></span>  <span class="entity"><span>&amp;</span>nbsp;</span><span class="entity"><span>&amp;</span>nbsp;</span>
+<span id="line925"></span>  </span><span>&lt;<span class="start-tag">i</span>&gt;</span><span></span><span>&lt;<span class="start-tag">font</span> <span class="attribute-name">color</span>="<a class="attribute-value">#777777</a>"&gt;</span><span>This bug is not in your last
+<span id="line926"></span>    search results.</span><span>&lt;/<span class="end-tag">font</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line927"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line928"></span>
+<span id="line929"></span></span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>
+<span id="line930"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line931"></span>
+<span id="line932"></span>
+<span id="line933"></span>
+<span id="line934"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">footer</a>"&gt;</span><span>
+<span id="line935"></span>  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">intro</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line936"></span>
+<span id="line937"></span>
+<span id="line938"></span>
+<span id="line939"></span>
+<span id="line940"></span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">id</span>="<a class="attribute-value">useful-links</a>"&gt;</span><span>
+<span id="line941"></span>  </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">id</span>="<a class="attribute-value">links-actions</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">ul</span> <span class="attribute-name">class</span>="<a class="attribute-value">links</a>"&gt;</span><span>
+<span id="line942"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/" class="attribute-value">./</a>"&gt;</span><span>Home</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line943"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/enter_bug.cgi" class="attribute-value">enter_bug.cgi</a>"&gt;</span><span>New</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line944"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/describecomponents.cgi" class="attribute-value">describecomponents.cgi</a>"&gt;</span><span>Browse</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line945"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/query.cgi" class="attribute-value">query.cgi</a>"&gt;</span><span>Search</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line946"></span>
+<span id="line947"></span>  </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>="<a class="attribute-value">form</a>"&gt;</span><span>
+<span id="line948"></span>    </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line949"></span>    </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">action</span>="<a href="view-source:https://bugs.eclipse.org/bugs/buglist.cgi" class="attribute-value">buglist.cgi</a>" <span class="attribute-name">method</span>="<a class="attribute-value">get</a>"
+<span id="line950"></span>        <span class="attribute-name">onsubmit</span>="<a class="attribute-value">if (this.quicksearch.value == '')
+<span id="line951"></span>                  { alert('Please enter one or more search terms first.');
+<span id="line952"></span>                    return false; } return true;</a>"&gt;</span><span>
+<span id="line953"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">id</span>="<a class="attribute-value">no_redirect_bottom</a>" <span class="attribute-name">name</span>="<a class="attribute-value">no_redirect</a>" <span class="attribute-name">value</span>="<a class="attribute-value">0</a>"&gt;</span><span>
+<span id="line954"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line955"></span>      if (history &amp;&amp; history.replaceState) {
+<span id="line956"></span>        var no_redirect = document.getElementById("no_redirect_bottom");
+<span id="line957"></span>        no_redirect.value = 1;
+<span id="line958"></span>      }
+<span id="line959"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line960"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">txt</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" <span class="attribute-name">id</span>="<a class="attribute-value">quicksearch_bottom</a>" <span class="attribute-name">name</span>="<a class="attribute-value">quicksearch</a>" 
+<span id="line961"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Quick Search</a>" <span class="attribute-name">value</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line962"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">btn</a>" <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>" <span class="attribute-name">value</span>="<a class="attribute-value">Search</a>" 
+<span id="line963"></span>           <span class="attribute-name">id</span>="<a class="attribute-value">find_bottom</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line964"></span>  </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/page.cgi?id=quicksearch.html" class="attribute-value">page.cgi?id=quicksearch.html</a>" <span class="attribute-name">title</span>="<a class="attribute-value">Quicksearch Help</a>"&gt;</span><span>[?]</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line965"></span>
+<span id="line966"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/report.cgi" class="attribute-value">report.cgi</a>"&gt;</span><span>Reports</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line967"></span>
+<span id="line968"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span>
+<span id="line969"></span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line970"></span>        </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/request.cgi" class="attribute-value">request.cgi</a>"&gt;</span><span>Requests</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line971"></span>
+<span id="line972"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span>
+<span id="line973"></span>        </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line974"></span>        </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.bugzilla.org/docs/4.4/en/html/bug_page.html" class="attribute-value">http://www.bugzilla.org/docs/4.4/en/html/bug_page.html</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_blank</a>"&gt;</span><span>Help</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line975"></span>      </span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line976"></span>    
+<span id="line977"></span>
+<span id="line978"></span>    </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">id</span>="<a class="attribute-value">mini_login_container_bottom</a>"&gt;</span><span>
+<span id="line979"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line980"></span>  </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">id</span>="<a class="attribute-value">login_link_bottom</a>" <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789&amp;GoAheadAndLogIn=1" class="attribute-value">show_bug.cgi?id=1789<span class="entity"><span>&amp;</span>amp;</span>GoAheadAndLogIn=1</a>"
+<span id="line981"></span>     <span class="attribute-name">onclick</span>="<a class="attribute-value">return show_mini_login_form('_bottom')</a>"&gt;</span><span>Log In</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line982"></span>
+<span id="line983"></span>  
+<span id="line984"></span>  </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">action</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789" class="attribute-value">show_bug.cgi?id=1789</a>" <span class="attribute-name">method</span>="<a class="attribute-value">POST</a>" 
+<span id="line985"></span>        <span class="attribute-name">class</span>="<a class="attribute-value">mini_login bz_default_hidden</a>"
+<span id="line986"></span>        <span class="attribute-name">id</span>="<a class="attribute-value">mini_login_bottom</a>"
+<span id="line987"></span>        <span class="attribute-name">onsubmit</span>="<a class="attribute-value">return check_mini_login_fields( '_bottom' );</a>"
+<span id="line988"></span>  &gt;</span><span>
+<span id="line989"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">Bugzilla_login_bottom</a>" 
+<span id="line990"></span>           <span class="attribute-name">class</span>="<a class="attribute-value">bz_login</a>"
+<span id="line991"></span>           <span class="attribute-name">name</span>="<a class="attribute-value">Bugzilla_login</a>"
+<span id="line992"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Login</a>"
+<span id="line993"></span>           <span class="attribute-name">onfocus</span>="<a class="attribute-value">mini_login_on_focus('_bottom')</a>"
+<span id="line994"></span>    &gt;</span><span>
+<span id="line995"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_password</a>" 
+<span id="line996"></span>           <span class="attribute-name">id</span>="<a class="attribute-value">Bugzilla_password_bottom</a>" 
+<span id="line997"></span>           <span class="attribute-name">name</span>="<a class="attribute-value">Bugzilla_password</a>"
+<span id="line998"></span>           <span class="attribute-name">type</span>="<a class="attribute-value">password</a>"
+<span id="line999"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Password</a>"
+<span id="line1000"></span>    &gt;</span><span>
+<span id="line1001"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">class</span>="<a class="attribute-value">bz_password bz_default_hidden bz_mini_login_help</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" 
+<span id="line1002"></span>           <span class="attribute-name">id</span>="<a class="attribute-value">Bugzilla_password_dummy_bottom</a>" <span class="attribute-name">value</span>="<a class="attribute-value">password</a>"
+<span id="line1003"></span>           <span class="attribute-name">title</span>="<a class="attribute-value">Password</a>"
+<span id="line1004"></span>           <span class="attribute-name">onfocus</span>="<a class="attribute-value">mini_login_on_focus('_bottom')</a>"
+<span id="line1005"></span>    &gt;</span><span>
+<span id="line1006"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">Bugzilla_login_token</a>"
+<span id="line1007"></span>           <span class="attribute-name">value</span>="<a class="attribute-value">1466926021-zmAVw_qTgzW_WyjJ1I030i73YHLxLkojaJO0jUSbD24</a>"&gt;</span><span>
+<span id="line1008"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>" <span class="attribute-name">name</span>="<a class="attribute-value">GoAheadAndLogIn</a>" <span class="attribute-name">value</span>="<a class="attribute-value">Log in</a>"
+<span id="line1009"></span>            <span class="attribute-name">id</span>="<a class="attribute-value">log_in_bottom</a>"&gt;</span><span>
+<span id="line1010"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line1011"></span>      mini_login_constants = {
+<span id="line1012"></span>          "login" : "login",
+<span id="line1013"></span>          "warning" : "You must set the login and password before logging in."
+<span id="line1014"></span>      };
+<span id="line1015"></span>      
+<span id="line1016"></span>      if (YAHOO.env.ua.gecko || YAHOO.env.ua.ie || YAHOO.env.ua.opera) {
+<span id="line1017"></span>          YAHOO.util.Event.onDOMReady(function() {
+<span id="line1018"></span>              init_mini_login_form('_bottom');
+<span id="line1019"></span>          });
+<span id="line1020"></span>      }
+<span id="line1021"></span>      else {
+<span id="line1022"></span>          YAHOO.util.Event.on(window, 'load', function () {
+<span id="line1023"></span>              window.setTimeout(function() {
+<span id="line1024"></span>                  init_mini_login_form('_bottom');
+<span id="line1025"></span>              }, 200);
+<span id="line1026"></span>          });
+<span id="line1027"></span>    }
+<span id="line1028"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line1029"></span>    </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>" <span class="attribute-name">onclick</span>="<a class="attribute-value">return hide_mini_login_form('_bottom')</a>"&gt;</span><span>[x]</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line1030"></span>  </span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line1031"></span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line1032"></span></span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">id</span>="<a class="attribute-value">forgot_container_bottom</a>"&gt;</span><span>
+<span id="line1033"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line1034"></span>  </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">id</span>="<a class="attribute-value">forgot_link_bottom</a>" <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789&amp;GoAheadAndLogIn=1#forgot" class="attribute-value">show_bug.cgi?id=1789<span class="entity"><span>&amp;</span>amp;</span>GoAheadAndLogIn=1#forgot</a>"
+<span id="line1035"></span>     <span class="attribute-name">onclick</span>="<a class="attribute-value">return show_forgot_form('_bottom')</a>"&gt;</span><span>Forgot Password</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line1036"></span>  </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">action</span>="<a href="view-source:https://bugs.eclipse.org/bugs/token.cgi" class="attribute-value">token.cgi</a>" <span class="attribute-name">method</span>="<a class="attribute-value">post</a>" <span class="attribute-name">id</span>="<a class="attribute-value">forgot_form_bottom</a>"
+<span id="line1037"></span>        <span class="attribute-name">class</span>="<a class="attribute-value">mini_forgot bz_default_hidden</a>"&gt;</span><span>
+<span id="line1038"></span>    </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">login_bottom</a>"&gt;</span><span>Login:</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line1039"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" <span class="attribute-name">name</span>="<a class="attribute-value">loginname</a>" <span class="attribute-name">size</span>="<a class="attribute-value">20</a>" <span class="attribute-name">id</span>="<a class="attribute-value">login_bottom</a>"&gt;</span><span>
+<span id="line1040"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">forgot_button_bottom</a>" <span class="attribute-name">value</span>="<a class="attribute-value">Reset Password</a>" 
+<span id="line1041"></span>           <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>"&gt;</span><span>
+<span id="line1042"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">a</a>" <span class="attribute-name">value</span>="<a class="attribute-value">reqpw</a>"&gt;</span><span>
+<span id="line1043"></span>    </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">id</span>="<a class="attribute-value">token_bottom</a>" <span class="attribute-name">name</span>="<a class="attribute-value">token</a>" <span class="attribute-name">value</span>="<a class="attribute-value">1466926021-NsiADNgmQw2lxbje-g0saWOWJxNffpZyVPl8w5l5Vb4</a>"&gt;</span><span>
+<span id="line1044"></span>    </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:https://bugs.eclipse.org/bugs/show_bug.cgi?id=1789#" class="attribute-value">#</a>" <span class="attribute-name">onclick</span>="<a class="attribute-value">return hide_forgot_form('_bottom')</a>"&gt;</span><span>[x]</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line1045"></span>  </span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line1046"></span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line1047"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line1048"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.eclipse.org/legal/termsofuse.php" class="attribute-value">http://www.eclipse.org/legal/termsofuse.php</a>"&gt;</span><span>Terms of Use</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line1049"></span>  </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span>| </span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line1050"></span>  </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a href="view-source:http://www.eclipse.org/legal/copyright.php" class="attribute-value">http://www.eclipse.org/legal/copyright.php</a>"&gt;</span><span>Copyright Agent</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line1051"></span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>
+<span id="line1052"></span>  </span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line1053"></span>
+<span id="line1054"></span>  
+<span id="line1055"></span>    
+<span id="line1056"></span>
+<span id="line1057"></span>
+<span id="line1058"></span>  
+<span id="line1059"></span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>
+<span id="line1060"></span>
+<span id="line1061"></span>  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">outro</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line1062"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line1063"></span>
+<span id="line1064"></span>
+<span id="line1065"></span></span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line1066"></span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span></span></pre><menu id="actions" type="context"><menuitem accesskey="L" label="Go to Line…" id="goToLine"></menuitem><menuitem type="checkbox" label="Wrap Long Lines" id="wrapLongLines"></menuitem><menuitem checked="true" type="checkbox" label="Syntax Highlighting" id="highlightSyntax"></menuitem></menu></body></html>
